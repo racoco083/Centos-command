@@ -110,4 +110,13 @@ GATEWAY=192.168.5.1
 
 ### cat /etc/services | grep '^ssh.*tcp' (서비스 포트 정보 확인)
 
+### /sbin/ip -6 addr add <IPv6>/<Prefix길이> dev <interface>
+ 
+ ex) /sbin/ip -6 addr add 2001:2b8:2:fff3::105/64 dev eth0
+
+### /sbin/ip -6 addr del <IPv6>/<Prefix길이> dev <interface>
+
+ ex) /sbin/ip -6 addr del 2001:2b8:2:fff3::105/64 dev eth0
+
+
 
